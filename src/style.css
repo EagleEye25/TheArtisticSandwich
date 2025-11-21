@@ -1,0 +1,133 @@
+/* 1️⃣ Import custom font */
+@font-face {
+  font-family: 'Thank You';
+  src: url('/assets/fonts/ThankYou-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2️⃣ Tailwind base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3️⃣ Global styles */
+body {
+  @apply bg-gray-50 text-gray-800;
+  font-family: 'Thank You', cursive; /* flowy body text */
+  font-size: 30px;
+}
+
+html {
+  @apply scroll-pt-16 scroll-smooth;
+}
+
+/* 4️⃣ Buttons */
+.btn-primary {
+  @apply inline-block px-6 py-2 rounded-xl font-semibold text-white shadow-lg transition-transform hover:scale-105 hover:opacity-90 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 bg-[length:200%_100%];
+}
+
+.btn-secondary {
+  @apply inline-block px-6 py-2 rounded-xl font-semibold text-white shadow-lg transition-transform hover:scale-105 hover:opacity-90 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-600 bg-[length:200%_100%];
+}
+
+.btn-lg { @apply px-8 py-3 text-lg; }
+.btn-md { @apply px-6 py-2 text-base; }
+.btn-sm { @apply px-4 py-1 text-sm; }
+
+/* 5️⃣ Section cards */
+.section-card {
+  @apply max-w-6xl mx-auto p-6 my-16 rounded-3xl shadow-lg relative overflow-hidden bg-gradient-to-br from-pink-50 via-purple-50 to-pink-50;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-6 text-center text-purple-800 font-handwriting;
+}
+
+/* Specialty cards */
+.specialty-card {
+  @apply bg-white/80 p-6 rounded-2xl shadow-md backdrop-blur-md text-center transition-transform hover:scale-105 hover:shadow-xl relative;
+}
+
+.specialty-card h3 { @apply text-2xl; }
+.specialty-card p { @apply text-lg; }
+
+/* 6️⃣ Hero image */
+.hero-img {
+  @apply relative rounded-2xl shadow-md max-w-full sm:max-w-lg;
+}
+
+.hero-subtitle {
+  @apply font-handwriting;
+}
+
+/* 7️⃣ Gallery */
+.gallery-item {
+  @apply relative bg-white/80 rounded-2xl shadow-md overflow-hidden flex items-center justify-center;
+  aspect-ratio: 1 / 1; /* keeps all items square */
+}
+
+.gallery-item:hover { @apply scale-105 shadow-xl; }
+
+.gallery-item::after {
+  content: "View Design";
+  @apply absolute inset-0 flex items-center justify-center text-white bg-black/50 opacity-0 transition-opacity rounded-2xl font-semibold text-lg;
+}
+
+.gallery-item:hover::after { @apply opacity-100; }
+
+.gallery-img {
+  @apply w-full h-full object-cover rounded;
+  display: block;
+}
+
+/* 8️⃣ Header */
+.site-header {
+  @apply fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-md border-b border-purple-200;
+}
+
+.site-header-inner { @apply max-w-6xl mx-auto flex justify-between items-center p-4; }
+
+.logo-gradient {
+  @apply font-extrabold text-2xl bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-500 bg-clip-text text-transparent;
+}
+
+.nav-link {
+  @apply relative font-medium text-gray-700 transition-colors hover:text-purple-600;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 -bottom-1 h-0.5 bg-purple-600 transition-all w-0;
+}
+
+.nav-link:hover::after { @apply w-full; }
+
+.nav-items { @apply flex space-x-6; }
+
+/* 9️⃣ Decorative blobs */
+.blob-pink {
+  @apply absolute -top-20 -left-20 w-64 h-64 bg-pink-200 rounded-full opacity-30 blur-3xl animate-pulse-slow animate-float;
+}
+
+.blob-purple {
+  @apply absolute -bottom-24 -right-24 w-72 h-72 bg-purple-300 rounded-full opacity-30 blur-3xl animate-pulse-slow animate-float;
+}
+
+/* 10️⃣ Footer */
+.footer-signature { @apply text-purple-700 text-xl font-handwriting text-center mt-6; }
+.footer-social a:hover { @apply text-pink-500 scale-110; }
+
+/* 11️⃣ Animations */
+@layer utilities {
+  .font-handwriting { font-family: 'Thank You', cursive; }
+
+  .animate-delay-100 { animation-delay: 0.1s; }
+  .animate-delay-200 { animation-delay: 0.2s; }
+  .animate-delay-300 { animation-delay: 0.3s; }
+  .animate-delay-400 { animation-delay: 0.4s; }
+  .animate-delay-500 { animation-delay: 0.5s; }
+  .animate-delay-600 { animation-delay: 0.6s; }
+  .animate-delay-700 { animation-delay: 0.7s; }
+  .animate-delay-800 { animation-delay: 0.8s; }
+}
