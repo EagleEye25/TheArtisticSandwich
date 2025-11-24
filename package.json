@@ -1,12 +1,13 @@
 {
-  "name": "my-project",
+  "name": "the-artistic-sandwich",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build && cp CNAME dist/CNAME",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npx gh-pages -d dist"
   },
   "dependencies": {
     "@vueuse/head": "^2.0.0",
