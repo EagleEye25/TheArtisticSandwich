@@ -5,11 +5,11 @@
     <div class="blob-purple"></div>
 
     <!-- Section title -->
-    <h2 class="section-title">About The Artistic Sandwich</h2>
+    <h2 class="section-title">Meet The Artist Behind The Ink</h2>
 
     <!-- Artist description -->
     <p class="text-center text-gray-700 max-w-2xl mx-auto mb-8">
-      She is a master of <span class="font-semibold">fineline tattoos</span> and <span class="font-semibold">black & grey designs</span>, celebrated for her <span class="font-semibold">precision, creativity, and meticulous attention to detail</span>. Each tattoo is thoughtfully crafted to tell a unique story and capture the essence of her clients’ vision.
+      With a passion for <span class="font-semibold">fineline black & grey tattooing</span>, she transforms ideas into timeless pieces of art. Her work is defined by <span class="font-semibold">precision, creativity, and meticulous attention to detail</span>, ensuring each tattoo is a reflection of her client’s story. Beyond technique, she brings a thoughtful, collaborative approach to every design, making each session a memorable experience.
     </p>
 
     <!-- Specialties grid -->

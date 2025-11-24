@@ -4,13 +4,13 @@
     <div class="blob-pink"></div>
     <div class="blob-purple"></div>
 
-    <!-- Hero text -->
+    <!-- Hero title -->
     <h2 class="section-title mb-4">
-      Fineline Black & Grey Tattoo Artist
+      Turning Skin Into Stories
     </h2>
 
     <p class="hero-subtitle font-bold mb-8">
-      Precision, creativity, and passion in every custom tattoo. Each design is thoughtfully crafted to capture the essence of your vision.
+      Every line, every shade, every tattoo tells a story uniquely yours.
     </p>
 
     <!-- Featured image -->
@@ -27,11 +27,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-// No reactive logic needed
-</script>
-
-<style>
-</style>
-
